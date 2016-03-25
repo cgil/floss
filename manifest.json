@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+
+    "name": "Floss",
+    "description": "Always floss before leaving the house.",
+    "version": "1.0",
+
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "webNavigation",
+        "https://www.facebook.com/"
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    }
+}
